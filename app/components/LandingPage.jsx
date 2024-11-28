@@ -2,6 +2,7 @@
 import React from "react";
 
 import Headermenu2 from "./Headermenu2";
+import Link from "next/link";
 
 const Header = () => (
   <div className="bg-gradient-to-r from-blue-800 to-blue-600 p-4 text-center rounded-3xl mx-auto my-5 w-11/12 lg:w-3/4">
@@ -64,12 +65,13 @@ const GridContainer = ({ onLinkClick }) => (
       text="Safety Tips For Exercise"
       onClick={() => onLinkClick("safetyInstructionsFor")}
     />
-    <GridItem
-      imgSrc="/ls6.png"
-      altText="Person doing vertigo exercises"
-      text="Vertigo Exercises"
-      onClick={() => onLinkClick("what")}
-    />
+    <Link href="/exercise">
+      <GridItem
+        imgSrc="/ls6.png"
+        altText="Person doing vertigo exercises"
+        text="Vertigo Exercises"
+      />
+    </Link>
     <GridItem
       imgSrc="/ls7.png"
       altText="Do's and Don'ts icon"
