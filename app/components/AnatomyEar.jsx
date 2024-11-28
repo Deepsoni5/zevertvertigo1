@@ -2,8 +2,12 @@ import React from "react";
 
 const AnatomyEar = () => {
   return (
-    <div id="group" className="w-[80%] mx-auto flex flex-col lg:flex-row mt-24">
-      <div className="lg:w-1/2 lg:pr-8">
+    <div
+      id="group"
+      data-scroll-to="group"
+      className="w-[80%] mx-auto flex flex-col-reverse md:flex-col lg:flex-row mt-24"
+    >
+      <div className="mt-16 md:mt-0 lg:w-1/2 lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Anatomy of the <span className="text-[#005D9A]">inner ear</span>
         </h1>

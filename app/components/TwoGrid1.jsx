@@ -6,7 +6,7 @@ const TwoGrid1 = ({ translations, language }) => {
   return (
     <div className="w-[80%] py-10 mx-auto">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+        <h1 className="text-4xl font-bold text-gray-800 mb-2">
           {translations[language].data[121].Name}
         </h1>
         <p className="text-gray-600 mb-6 text-xl w-full md:w-[70%] mx-auto">

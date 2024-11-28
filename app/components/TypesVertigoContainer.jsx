@@ -34,7 +34,7 @@ const TypesVertigoContainer = ({
         }
  md:flex-row items-center space-y-6 md:space-y-0 ${
    reverse == "true" ? "md:gap-14" : "md:space-x-24"
- } w-[80%] mx-auto`}
+ } w-[90%] md:w-[80%] mx-auto`}
       >
         <div
           className="relative w-full md:w-5/12"

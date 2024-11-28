@@ -13,7 +13,7 @@ const Vestibular = () => {
         <h1 className="text-4xl font-bold mb-5 text-white">
           Vestibular Rehabilitation Exercise
         </h1>
-        <p className="text-lg text-white mb-8 md:text-center w-[80%] mx-auto text-justify">
+        <p className="text-lg text-white  mb-8 md:text-center w-full mx-auto text-justify">
           Exercise is a fantastic way to help you manage vertigo and start
           feeling better. We have curated these simple and effective practices
           to help you ease your symptoms. Let’s say goodbye to that discomfort
