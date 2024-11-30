@@ -14,7 +14,7 @@ const Safety = () => {
           <h1 className="text-4xl font-bold text-indigo-900">
             Safety Instructions for Vertigo Exercises
           </h1>
-          <p className="text-gray-600 mt-4 w-[80%] mx-auto text-xl mb-10 text-justify md:text-center">
+          <p className="text-gray-600 mt-4 w-[100%] sm:w-[80%] mx-auto text-xl mb-10 text-justify md:text-center">
             Living with vertigo can be challenging, especially when it comes to
             engaging in physical exercises. To help you navigate exercise safely
             and effectively, here are some Dos and Don’ts tailored for you:

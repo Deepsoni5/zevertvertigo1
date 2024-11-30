@@ -7,11 +7,11 @@ const ShareButtons = () => {
         <i className="fas fa-play-circle mr-2"></i>
         Watch video
       </button>
-      <button className="flex items-center bg-green-500 text-white font-semibold py-2 px-4 rounded-full">
+      <button className="flex items-center bg-green-500 text-white font-semibold py-2 px-6 rounded-full">
         <i className="fab fa-whatsapp mr-2"></i>
         Share PDF
       </button>
-      <button className="flex items-center bg-green-500 text-white font-semibold py-2 px-4 rounded-full">
+      <button className="flex items-center bg-green-500 text-white font-semibold py-2 px-5 rounded-full">
         <i className="fab fa-whatsapp mr-2"></i>
         Share Video
       </button>
