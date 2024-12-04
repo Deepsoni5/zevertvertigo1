@@ -38,7 +38,7 @@ const AnatomicalModel = () => {
             Anatomical
             <span className="text-[#005D9A]"> 3d Models</span>
           </h1>
-          <div className="mt-8">
+          <div className="mt-8 hidden">
             <img
               alt="3D model of an anatomical structure"
               className="mx-auto"

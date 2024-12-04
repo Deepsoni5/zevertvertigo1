@@ -5,12 +5,19 @@ const AnatomyEar = () => {
     <div
       id="group"
       data-scroll-to="group"
-      className="w-[80%] mx-auto flex flex-col-reverse md:flex-col lg:flex-row mt-24"
+      className="w-[80%] mx-auto flex flex-col lg:flex-row mt-24"
     >
       <div className="mt-16 md:mt-0 lg:w-1/2 lg:pr-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Anatomy of the <span className="text-[#005D9A]">inner ear</span>
         </h1>
+        <div className="lg:w-1/2 flex justify-center">
+          <img
+            src="/ear.jpeg"
+            alt="Detailed diagram of the inner ear with labels for various parts such as the auricle, temporal muscle, hammer, anvil, stirrup, semicircular channels, nerve of the vestibule, facial nerve, nerve of the cochlea, snail, and more."
+            className="w-full block md:hidden my-8  h-auto object-contain"
+          />
+        </div>
         <p className="text-gray-700 mb-4 text-xl text-justify">
           The inner ear houses the parts responsible for hearing and balance. It
           is split into the cochlea for hearing and the semi-circular canals for
@@ -41,7 +48,7 @@ const AnatomyEar = () => {
         <img
           src="/ear.jpeg"
           alt="Detailed diagram of the inner ear with labels for various parts such as the auricle, temporal muscle, hammer, anvil, stirrup, semicircular channels, nerve of the vestibule, facial nerve, nerve of the cochlea, snail, and more."
-          className="w-full h-auto object-contain"
+          className="w-full hidden md:block h-auto object-contain"
         />
       </div>
     </div>

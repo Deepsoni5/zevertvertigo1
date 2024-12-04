@@ -53,7 +53,7 @@ const TypesVertigoContainer = ({
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold  text-blue-900">
             {headingText} <span className="text-[#005D9A]">{headingBlue}</span>
           </h1>
-          <p className="text-gray-700 text-xl text-justify mt-4">{para}</p>
+          <p className="text-gray-700 text-xl text-justify mt-6">{para}</p>
           <WhatsappButtonVideo />
         </div>
       </div>

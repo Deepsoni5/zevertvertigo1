@@ -15,8 +15,13 @@ const Header = () => (
   </div>
 );
 
-const GridItem = ({ imgSrc, altText, text, onClick }) => (
-  <div className="flex flex-col items-center cursor-pointer" onClick={onClick}>
+const GridItem = ({ imgSrc, altText, text, onClick, isNinth }) => (
+  <div
+    className={` ${
+      isNinth == "true" && "col-span-2 lg:col-span-1"
+    } flex flex-col items-center cursor-pointer`}
+    onClick={onClick}
+  >
     <div className="relative">
       <img src={imgSrc} alt={altText} className="rounded-full w-48 h-30" />
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0.5 h-8 bg-white"></div>
@@ -88,6 +93,7 @@ const GridContainer = ({ onLinkClick }) => (
       imgSrc="/ls9_1.png"
       altText="Whatsapp chatbot icon"
       text="Whatsapp Chatbot"
+      isNinth="true"
       onClick={() => onLinkClick("accessQuickInformation")}
     />
   </div>

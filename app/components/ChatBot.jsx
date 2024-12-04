@@ -10,7 +10,7 @@ const ChatBot = () => {
     >
       <div className="text-center">
         <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 w-[70%] mx-auto">
-          Access quick information on your fingertip on our chatbot platforms
+          Access quick information on your fingertip on our chatbot platform
         </h1>
         <div className="p-10 inline-block mb-6">
           <img

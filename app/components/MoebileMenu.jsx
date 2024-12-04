@@ -1,6 +1,6 @@
 "use client";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -25,6 +25,10 @@ const MobileMenu = () => {
     }
     toggleNavbar();
   };
+
+  const navigateToHomeAndScroll = useCallback((target) => {
+    window.location.href = `/?scrollTo=${target}`;
+  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
   function toggleNavbar() {
@@ -86,7 +90,7 @@ const MobileMenu = () => {
         <ul className="mt-16">
           <li>
             <button
-              onClick={() => handleButtonClick("vertigoIsA")}
+              onClick={() => navigateToHomeAndScroll("vertigoIsA")}
               className="text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
               What is Vertigo?
@@ -94,28 +98,21 @@ const MobileMenu = () => {
           </li>
           <li>
             <button
-              onClick={() => handleButtonClick("group")}
+              onClick={() => navigateToHomeAndScroll("ana")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
-              Anatomical 3d model
+              Anatomical 3D Model
             </button>
           </li>
           <li>
             <button
-              onClick={() => handleButtonClick("howToLive")}
-              className=" text-white bg-transparent text-lg text-left cursor-pointer block py-2 px-4"
-            >
-              How To Live with Vertigo?
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => handleButtonClick("tv")}
+              onClick={() => navigateToHomeAndScroll("tv")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
               Types of Vertigo
             </button>
           </li>
+
           <li>
             <Link
               href="/exercise"
@@ -127,7 +124,7 @@ const MobileMenu = () => {
           </li>
           <li>
             <button
-              onClick={() => handleButtonClick("safetyInstructionsFor")}
+              onClick={() => navigateToHomeAndScroll("safetyInstructionsFor")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
               Safety Tips
@@ -135,7 +132,25 @@ const MobileMenu = () => {
           </li>
           <li>
             <button
-              onClick={() => handleButtonClick("dosDontsContent")}
+              onClick={() => navigateToHomeAndScroll("group")}
+              className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
+            >
+              Anatomy of Ear
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() => navigateToHomeAndScroll("howToLive")}
+              className=" text-white bg-transparent text-lg text-left cursor-pointer block py-2 px-4"
+            >
+              How To Live with Vertigo?
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() => navigateToHomeAndScroll("dosDontsContent")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
               Dos and Donts
@@ -143,7 +158,7 @@ const MobileMenu = () => {
           </li>
           <li>
             <button
-              onClick={() => handleButtonClick("accessQuickInformation")}
+              onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
               ChatBots
