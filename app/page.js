@@ -82,7 +82,7 @@ export default function Home() {
           <CauseContainer />
           <TypesVertigo />
           <TypesVertigoContainer
-            videoId="IcLtdUrQkIg"
+            videoId="JGvVcyJigbg"
             reverse="false"
             imgSrc="/laby.png"
             headingText="Labyrinthitis"
@@ -102,7 +102,7 @@ they end misleading balance signals to the brain leading to vertigo"
           />
           <TypesVertigoContainer
             reverse="false"
-            videoId="IcLtdUrQkIg"
+            videoId="QJDS7SmfZh0"
             imgSrc="menire.png"
             headingText="Meniere’s"
             headingBlue="disease"
@@ -111,7 +111,7 @@ feel like they might need to sit down to avoid falling. It causes issues with he
 individuals between 40 and 60 years old. Some individuals might have family members with this same condition."
           />
           <TypesVertigoContainer
-            videoId="IcLtdUrQkIg"
+            videoId="n-ROxSrEXrU"
             reverse="true"
             imgSrc="post.png"
             headingText="Posttraumatic"

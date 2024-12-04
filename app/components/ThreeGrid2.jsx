@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 import WhatsappButtonVideo from "./WhatsappButtonVideo";
+import VideoPlayer from "./VideoPlayer";
 
 const ThreeGrid2 = ({ translations, language }) => {
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
+
+  const handleVideoClose = () => {
+    setIsVideoVisible(false);
+  };
+  const handleWatchMovie = (videoId) => {
+    setIsVideoVisible(true);
+    setSelectedVideoId(videoId);
+  };
+
+  const imageUrlStand =
+    "https://www.youtube.com/playlist?list=PL76dONsDiTy6xaDs9m91xgNnfanN1_l49";
   return (
     <div className="text-center py-10 w-[80%] mx-auto">
       <h1 className="text-4xl font-bold text-gray-800">
         {translations[language].data[42].Name}
       </h1>
+      {selectedVideoId && isVideoVisible && (
+        <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />
+      )}
       <p className="text-gray-600 mt-4 mb-8 text-xl">
         {translations[language].data[124].Name}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="text-center flex flex-col items-center">
+        <div
+          className="text-center cursor-pointer flex flex-col items-center"
+          onClick={() => handleWatchMovie("4WaP4B6CsF0")}
+        >
           <div className="relative w-full">
             <img
               src="/stand1.png"
@@ -27,7 +47,10 @@ const ThreeGrid2 = ({ translations, language }) => {
             {translations[language].data[86].Name.split(".")[1].slice(0, -1)}
           </p>
         </div>
-        <div className="text-center flex flex-col items-center">
+        <div
+          className="text-center cursor-pointer flex flex-col items-center"
+          onClick={() => handleWatchMovie("7EE1oz8pzdc")}
+        >
           <div className="relative w-full">
             <img
               src="/stand2.png"
@@ -42,7 +65,10 @@ const ThreeGrid2 = ({ translations, language }) => {
             {translations[language].data[86].Name.split(".")[2].slice(0, -1)}
           </p>
         </div>
-        <div className="text-center flex flex-col items-center">
+        <div
+          className="text-center cursor-pointer flex flex-col items-center"
+          onClick={() => handleWatchMovie("3_Xdtv7znuM")}
+        >
           <div className="relative w-full">
             <img
               src="/stand3.png"
@@ -59,7 +85,7 @@ const ThreeGrid2 = ({ translations, language }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <WhatsappButtonVideo />
+        <WhatsappButtonVideo link={imageUrlStand} />
       </div>
     </div>
   );

@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 import WhatsappButtonVideo from "./WhatsappButtonVideo";
+import VideoPlayer from "./VideoPlayer";
 
 const TwoGrid1 = ({ translations, language }) => {
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
+
+  const handleVideoClose = () => {
+    setIsVideoVisible(false);
+  };
+  const handleWatchMovie = (videoId) => {
+    setIsVideoVisible(true);
+    setSelectedVideoId(videoId);
+  };
+
+  const imageUrlSleep =
+    "https://www.youtube.com/playlist?list=PL76dONsDiTy5Bxfr-FOMRrUtKEsfjOevq";
   return (
     <div className="w-[80%] py-10 mx-auto">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
           {translations[language].data[121].Name}
         </h1>
+        {selectedVideoId && isVideoVisible && (
+          <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />
+        )}
         <p className="text-gray-600 mb-6 text-xl w-full md:w-[70%] mx-auto">
           {translations[language].data[126].Name}
         </p>
         <div className="flex flex-col md:flex-row justify-center md:space-x-4">
-          <div className="md:w-1/3">
+          <div
+            className="md:w-1/3 cursor-pointer"
+            onClick={() => handleWatchMovie("KnWulw-m6JM")}
+          >
             <div className="relative">
               <img
                 src="/sleep1.png"
@@ -30,7 +50,10 @@ const TwoGrid1 = ({ translations, language }) => {
               {translations[language].data[122].Name}
             </p>
           </div>
-          <div className="md:w-1/3">
+          <div
+            className="md:w-1/3 cursor-pointer"
+            onClick={() => handleWatchMovie("KnWulw-m6JM")}
+          >
             <div className="relative">
               <img
                 src="/sleep2.png"
@@ -50,7 +73,7 @@ const TwoGrid1 = ({ translations, language }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <WhatsappButtonVideo />
+        <WhatsappButtonVideo link={imageUrlSleep} />
       </div>
     </div>
   );

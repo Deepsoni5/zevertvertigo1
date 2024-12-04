@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 import WhatsappButtonVideo from "./WhatsappButtonVideo";
+import VideoPlayer from "./VideoPlayer";
 
 const FourGrid = ({ translations, language }) => {
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
+
+  const handleVideoClose = () => {
+    setIsVideoVisible(false);
+  };
+  const handleWatchMovie = (videoId) => {
+    setIsVideoVisible(true);
+    setSelectedVideoId(videoId);
+  };
+
+  const imageUrlMove =
+    "https://www.youtube.com/playlist?list=PL76dONsDiTy6qSWFPc9slteDjrW17wkpW";
   return (
     <div className="max-w-4xl mx-auto py-10">
       <h1 className="text-4xl font-bold text-center text-black">
         {translations[language].data[43].Name}
       </h1>
+      {selectedVideoId && isVideoVisible && (
+        <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />
+      )}
       <p className="text-center text-gray-600 mt-2 text-xl">
         {translations[language].data[125].Name}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        <div className="relative">
+        <div
+          className="relative cursor-pointer"
+          onClick={() => handleWatchMovie("PhMyGxvfHFI")}
+        >
           <img
             src="/move1.png"
             alt="Person throwing and catching a ball while walking"
@@ -25,7 +45,10 @@ const FourGrid = ({ translations, language }) => {
             {translations[language].data[90].Name.split(".")[1].slice(0, -1)}
           </p>
         </div>
-        <div className="relative">
+        <div
+          className="relative cursor-pointer"
+          onClick={() => handleWatchMovie("TN2E9OtoVRE")}
+        >
           <img
             src="/move2.png"
             alt="Person aiming with the ball and bending/stretching while playing with it"
@@ -38,7 +61,10 @@ const FourGrid = ({ translations, language }) => {
             {translations[language].data[90].Name.split(".")[3].slice(0, -1)}
           </p>
         </div>
-        <div className="relative">
+        <div
+          className="relative cursor-pointer"
+          onClick={() => handleWatchMovie("kccwKZ3ytQQ")}
+        >
           <img
             src="/move3.png"
             alt="Person walking around in the room with eyes open and closed"
@@ -51,7 +77,10 @@ const FourGrid = ({ translations, language }) => {
             {translations[language].data[90].Name.split(".")[2].slice(0, -1)}
           </p>
         </div>
-        <div className="relative">
+        <div
+          className="relative cursor-pointer"
+          onClick={() => handleWatchMovie("kccwKZ3ytQQ")}
+        >
           <img
             src="/move4.png"
             alt="Person walking up and down the stairs"
@@ -66,7 +95,7 @@ const FourGrid = ({ translations, language }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <WhatsappButtonVideo />
+        <WhatsappButtonVideo link={imageUrlMove} />
       </div>
     </div>
   );

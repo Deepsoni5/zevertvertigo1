@@ -1,8 +1,12 @@
+import { wpshare } from "@/utils";
 import React from "react";
 
-const WhatsappButtonVideo = () => {
+const WhatsappButtonVideo = ({ link }) => {
   return (
-    <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded flex items-center space-x-2">
+    <button
+      onClick={() => wpshare(link)}
+      className="mt-4 bg-green-500 text-white px-4 py-2 rounded flex items-center space-x-2"
+    >
       <i className="fab fa-whatsapp"></i>
       <span>Share Video</span>
     </button>

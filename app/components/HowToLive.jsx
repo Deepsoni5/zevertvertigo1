@@ -1,15 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import VideoPlayer from "./VideoPlayer";
 
 const HowToLive = () => {
   const items = [
-    { title: "What is vertigo?", image: "/how1.png" },
-    { title: "Dos and Donts in vertigo", image: "/h2.png" },
-    { title: "Diet changes with Vertigo", image: "/h7.jpeg" },
-    { title: "Myths and Facts about vertigo", image: "/h3.png" },
-    { title: "How to avoid fall in vertigo", image: "/h4.png" },
-    { title: "Tips to the Care-giver", image: "/h5.png" },
-    { title: "Travelling with vertigo", image: "/h6.jpeg" },
+    { title: "What is vertigo?", image: "/how1.png", link: "5Lh1INdRHKg" },
+    {
+      title: "Dos and Donts in vertigo",
+      image: "/h2.png",
+      link: "Hi_QSD-6_GY",
+      wplink: "",
+    },
+    {
+      title: "Diet changes with Vertigo",
+      image: "/h7.jpeg",
+      link: "eNVpyfT5guw",
+      wplink: "",
+    },
+    {
+      title: "Myths and Facts about vertigo",
+      image: "/h3.png",
+      link: "phl8u99rTfo  ",
+      wplink: "",
+    },
+    {
+      title: "How to avoid fall in vertigo",
+      image: "/h4.png",
+      link: "lM0PC3CWpBc",
+      wplink: "",
+    },
+    { title: "Tips to the Care-giver", image: "/h5.png", link: "36zxdHwFbqE" },
+    {
+      title: "Travelling with vertigo",
+      image: "/h6.jpeg",
+      link: "98k7KHF2UMY",
+      wplink: "",
+    },
   ];
+
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
+
+  const handleVideoClose = () => {
+    setIsVideoVisible(false);
+  };
+  const handleWatchMovie = (videoId) => {
+    setIsVideoVisible(true);
+    setSelectedVideoId(videoId);
+  };
 
   return (
     <div
@@ -19,6 +56,9 @@ const HowToLive = () => {
           "linear-gradient(127.09deg, #005D9A 10.16%, #000305 47.54%, #004F83 92.87%)",
       }}
     >
+      {selectedVideoId && isVideoVisible && (
+        <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />
+      )}
       <div
         id="howToLive"
         data-scroll-to="howToLive"
@@ -35,6 +75,7 @@ const HowToLive = () => {
             <div
               key={index}
               className="relative group bg-gray-800 rounded-lg overflow-hidden"
+              onClick={() => handleWatchMovie(item.link)}
             >
               <img
                 src={item.image}
@@ -73,7 +114,10 @@ const HowToLive = () => {
 
           {/* Render the last item as a full-width row */}
           <div className="col-span-1 sm:col-span-3">
-            <div className="relative group bg-gray-800 rounded-lg overflow-hidden">
+            <div
+              className="relative group bg-gray-800 rounded-lg overflow-hidden"
+              onClick={() => handleWatchMovie("98k7KHF2UMY")}
+            >
               <div className="w-full h-auto md:h-96 relative overflow-hidden">
                 <img
                   src={items[6].image}

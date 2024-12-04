@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import WhatsAppButton from "./WhatsAppButton";
 import WhatsappButtonVideo from "./WhatsappButtonVideo";
+import VideoPlayer from "./VideoPlayer";
 
 const TwoGrid = ({ translations, language }) => {
+  const [selectedVideoId, setSelectedVideoId] = useState(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(true);
+
+  const handleVideoClose = () => {
+    setIsVideoVisible(false);
+  };
+  const handleWatchMovie = (videoId) => {
+    setIsVideoVisible(true);
+    setSelectedVideoId(videoId);
+  };
+
+  const imageUrlHead =
+    "https://www.youtube.com/playlist?list=PL76dONsDiTy4T7aF7NeHxqLkKDFE3eicb";
   return (
     <div className="w-[80%] py-10 mx-auto">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
           {translations[language].data[40].Name}
         </h1>
+        {selectedVideoId && isVideoVisible && (
+          <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />
+        )}
         <p className="text-gray-600 mb-6 text-xl w-full md:w-[70%] mx-auto">
           {translations[language].data[119].Name}
         </p>
         <div className="flex flex-col md:flex-row justify-center md:space-x-4">
-          <div className="md:w-1/3">
+          <div
+            className="md:w-1/3 cursor-pointer"
+            onClick={() => handleWatchMovie("IH3osa3A9bI")}
+          >
             <div className="relative">
               <img
                 src="/head1.png"
@@ -30,7 +50,10 @@ const TwoGrid = ({ translations, language }) => {
               {translations[language].data[79].Name.split(".")[1].slice(0, -1)}
             </p>
           </div>
-          <div className="md:w-1/3">
+          <div
+            className="md:w-1/3 cursor-pointer"
+            onClick={() => handleWatchMovie("rhw6iaWz7Z8")}
+          >
             <div className="relative">
               <img
                 src="/head2.png"
@@ -50,7 +73,7 @@ const TwoGrid = ({ translations, language }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <WhatsappButtonVideo />
+        <WhatsappButtonVideo link={imageUrlHead} />
       </div>
     </div>
   );
