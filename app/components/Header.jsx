@@ -76,6 +76,7 @@ const Header = ({ setShowLanding }) => {
         onSafetyTipsText1Click={() =>
           navigateToHomeAndScroll("safetyInstructionsFor")
         }
+        onAnatomyEar={() => navigateToHomeAndScroll("group")}
         onDosAndDonts1Click={() => navigateToHomeAndScroll("dosDontsContent")}
         onChatbotsText1Click={() =>
           navigateToHomeAndScroll("accessQuickInformation")

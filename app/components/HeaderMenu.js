@@ -19,6 +19,7 @@ const Headermenu = ({
   headermenuPosition,
   headermenuTop,
   headermenuLeft,
+  onAnatomyEar,
   setShowLanding,
 }) => {
   const headermenuStyle = useMemo(() => {
@@ -70,6 +71,10 @@ const Headermenu = ({
               className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onTypesOfVertigo2Click}
             >{`Types of Vertigo `}</div>
+            <div
+              className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
+              onClick={onAnatomyEar}
+            >{`Anatomy of Ear `}</div>
 
             <Link href="/exercise">
               <div className="relative text-white inline-block min-w-[81px] cursor-pointer  mq1600:text-3xl navbar-item">

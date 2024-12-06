@@ -112,6 +112,14 @@ const MobileMenu = () => {
               Types of Vertigo
             </button>
           </li>
+          <li>
+            <button
+              onClick={() => navigateToHomeAndScroll("group")}
+              className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
+            >
+              Anatomy of Ear
+            </button>
+          </li>
 
           <li>
             <Link
