@@ -31,7 +31,7 @@ const ThreeGrid2 = ({ translations, language }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
           className="text-center cursor-pointer flex flex-col items-center"
-          onClick={() => handleWatchMovie("4WaP4B6CsF0")}
+          onClick={() => handleWatchMovie("hVNxQEdxW5U")}
         >
           <div className="relative w-full">
             <img
@@ -49,7 +49,7 @@ const ThreeGrid2 = ({ translations, language }) => {
         </div>
         <div
           className="text-center cursor-pointer flex flex-col items-center"
-          onClick={() => handleWatchMovie("7EE1oz8pzdc")}
+          onClick={() => handleWatchMovie("RI3wWZFCHCE")}
         >
           <div className="relative w-full">
             <img
@@ -67,7 +67,7 @@ const ThreeGrid2 = ({ translations, language }) => {
         </div>
         <div
           className="text-center cursor-pointer flex flex-col items-center"
-          onClick={() => handleWatchMovie("3_Xdtv7znuM")}
+          onClick={() => handleWatchMovie("JXRtNPUmVng")}
         >
           <div className="relative w-full">
             <img

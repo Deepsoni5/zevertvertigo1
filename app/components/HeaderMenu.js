@@ -106,6 +106,11 @@ const Headermenu = ({
               {" "}
               Chatbots
             </div>
+            <Link href="/ref">
+              <div className="relative text-white inline-block min-w-[81px] cursor-pointer  mq1600:text-3xl navbar-item">
+                References
+              </div>
+            </Link>
           </div>
         </div>
         <div>

@@ -32,7 +32,7 @@ const TwoGrid1 = ({ translations, language }) => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-4">
           <div
             className="md:w-1/3 cursor-pointer"
-            onClick={() => handleWatchMovie("KnWulw-m6JM")}
+            onClick={() => handleWatchMovie("YUbkERDkwS4")}
           >
             <div className="relative">
               <img

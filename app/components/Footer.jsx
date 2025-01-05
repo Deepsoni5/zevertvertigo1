@@ -127,6 +127,11 @@ const Footer = ({ setShowLanding }) => {
           >
             Chatbots
           </button>
+          <Link href="/ref">
+            <button className="text-white hover:text-neutral-300 transition-all">
+              References
+            </button>
+          </Link>
 
           {/* Additional Buttons */}
           {isDataHubPage && (

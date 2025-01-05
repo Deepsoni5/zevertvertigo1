@@ -19,7 +19,7 @@ const HowToLive = () => {
     {
       title: "Myths and Facts about vertigo",
       image: "/h3.png",
-      link: "phl8u99rTfo  ",
+      link: "phl8u99rTfo",
       wplink: "",
     },
     {
