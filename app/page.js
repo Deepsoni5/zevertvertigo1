@@ -88,6 +88,7 @@ export default function Home() {
             headingText="Labyrinthitis"
             headingBlue=""
             para="Labyrinthitis is an ear infection that causes swelling in the inner ear, disturbing both hearing and balance. It can affectanyone but is more seen in adults aged 30-60, particularly in individuals assigned female at birth. If not treated promptly, itcan lead to hearing difficulties, a higher chance of falling, and lasting harm to the inner ear. The symptoms includedizziness, nausea, hearing loss along with a feeling of movement even when you are still. It can disrupt daily activities."
+            sup="1-10"
           />
           <TypesVertigoContainer
             videoId="IcLtdUrQkIg"
@@ -99,6 +100,7 @@ export default function Home() {
 particles shift and become trapped in the balance-controlling ear canals, usually originating from a part called
 the utricle. As these loose particles interact with hair-like structures in the canals during head movement,
 they end misleading balance signals to the brain leading to vertigo"
+            sup="1-9,11"
           />
           <TypesVertigoContainer
             reverse="false"
@@ -109,6 +111,7 @@ they end misleading balance signals to the brain leading to vertigo"
             para="Menieres disease is a rare inner ear disorder affecting balance and hearing. People with this condition often
 feel like they might need to sit down to avoid falling. It causes issues with hearing such as ringing in the ears (tinnitus) and temporary difficulty hearing, which might eventually lead to hearing loss. It usually happens to
 individuals between 40 and 60 years old. Some individuals might have family members with this same condition."
+            sup="1-9,12-14"
           />
           <TypesVertigoContainer
             videoId="n-ROxSrEXrU"
@@ -121,6 +124,7 @@ people might feel vertigo, which makes them think the room is spinning. This oft
 traumatic brain injury caused by falls, car accidents, or sports injuries. Almost half of people who get a
 concussion report feeling dizzy, lightheaded, or have problems with balance in the first days after injury.
 Although for most people these feelings go away in a few days or weeks, some might experience postconcussion vertigo for many years. "
+            sup="1-9,15-17"
           />
           <AnatomicalModel />
           <AnatomyEar />

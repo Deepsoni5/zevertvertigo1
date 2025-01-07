@@ -3,37 +3,52 @@ import VideoPlayer from "./VideoPlayer";
 
 const HowToLive = () => {
   const items = [
-    { title: "What is vertigo?", image: "/how1.png", link: "5Lh1INdRHKg" },
+    {
+      title: "What is vertigo?",
+      image: "/how1.png",
+      link: "5Lh1INdRHKg",
+      sup: "1-9",
+    },
     {
       title: "Dos and Donts in vertigo",
       image: "/h2.png",
       link: "Hi_QSD-6_GY",
       wplink: "",
+      sup: "1-9,36-40",
     },
     {
       title: "Diet changes with Vertigo",
       image: "/h7.jpeg",
       link: "eNVpyfT5guw",
       wplink: "",
+      sup: "41-47",
     },
     {
       title: "Myths and Facts about vertigo",
       image: "/h3.png",
       link: "phl8u99rTfo",
       wplink: "",
+      sup: "48-53",
     },
     {
       title: "How to avoid fall in vertigo",
       image: "/h4.png",
       link: "lM0PC3CWpBc",
       wplink: "",
+      sup: "54-59",
     },
-    { title: "Tips to the Care-giver", image: "/h5.png", link: "36zxdHwFbqE" },
+    {
+      title: "Tips to the Care-giver",
+      image: "/h5.png",
+      link: "36zxdHwFbqE",
+      sup: "60,61",
+    },
     {
       title: "Travelling with vertigo",
       image: "/h6.jpeg",
       link: "98k7KHF2UMY",
       wplink: "",
+      sup: "62-66",
     },
   ];
 
@@ -108,6 +123,7 @@ const HowToLive = () => {
               </div>
               <p className="absolute bottom-2 left-2 right-2 text-white text-center text-lg font-semibold shadow-text">
                 {item.title}
+                <sup>{item.sup}</sup>
               </p>
             </div>
           ))}

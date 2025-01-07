@@ -172,6 +172,15 @@ const MobileMenu = () => {
               ChatBots
             </button>
           </li>
+          <li>
+            <Link
+              href="/ref"
+              onClick={toggleNavbar}
+              className="text-white no-underline  cursor-pointer block py-2 px-4"
+            >
+              Reference
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

@@ -18,7 +18,10 @@ const CauseContainer = () => {
         <div className="flex-1">
           <h1 className="text-2xl md:text-3xl lg:text-4xl mt-5 lg:mt-20 font-bold text-gray-900">
             What causes
-            <span className="text-[#005D9A]"> vertigo?</span>
+            <span className="text-[#005D9A]">
+              {" "}
+              vertigo?<sup>1-9</sup>
+            </span>
           </h1>
           <p className="mt-4 text-gray-700 text-xl text-justify">
             Vertigo often happens when there is a mix-up in the messages your

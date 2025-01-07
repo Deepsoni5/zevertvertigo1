@@ -57,7 +57,9 @@ const AnatomicalModel = () => {
             className="mx-auto mb-2 w-68 h-60 cursor-pointer"
             onClick={() => handleClick("1.jpeg")}
           />
-          <p>Full ear 3d</p>
+          <p>
+            Full ear 3d<sup>18</sup>
+          </p>
         </div>
         <div className="text-center border-dotted border-2 border-gray-300 p-4">
           <img
@@ -66,7 +68,9 @@ const AnatomicalModel = () => {
             className="mx-auto mb-2 w-68 h-60 cursor-pointer"
             onClick={() => handleClick("2.png")}
           />
-          <p>Internal ear</p>
+          <p>
+            Internal ear<sup>19,21-23</sup>
+          </p>
         </div>
         <div className="text-center border-dotted border-2 border-gray-300 p-4">
           <img
@@ -75,7 +79,9 @@ const AnatomicalModel = () => {
             className="mx-auto mb-2 w-[300px] h-60 cursor-pointer"
             onClick={() => handleClick("3.jpg")}
           />
-          <p>Semi-circular canals</p>
+          <p>
+            Semi-circular canals<sup>20-22</sup>
+          </p>
         </div>
       </div>
       {isModalOpen && (

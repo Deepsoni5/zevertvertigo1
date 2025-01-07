@@ -10,6 +10,7 @@ const TypesVertigoContainer = ({
   headingBlue,
   videoId,
   para,
+  sup,
 }) => {
   const [selectedVideoId, setSelectedVideoId] = useState(null);
   const [isVideoVisible, setIsVideoVisible] = useState(true);
@@ -51,7 +52,11 @@ const TypesVertigoContainer = ({
         </div>
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold  text-blue-900">
-            {headingText} <span className="text-[#005D9A]">{headingBlue}</span>
+            {headingText}{" "}
+            <span className="text-[#005D9A]">
+              {headingBlue}
+              <sup>{sup}</sup>
+            </span>
           </h1>
           <p className="text-gray-700 text-xl text-justify mt-6">{para}</p>
           <WhatsappButtonVideo />

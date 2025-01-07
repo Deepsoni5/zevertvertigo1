@@ -21,7 +21,10 @@ const HeroContainer = () => {
         </div>
         <div className="flex-1">
           <h1 className="text-2xl md:text-3xl lg:text-4xl mt-8 font-bold text-gray-900">
-            What is <span className="text-[#005D9A]">vertigo?</span>
+            What is{" "}
+            <span className="text-[#005D9A]">
+              vertigo?<sup>1-9</sup>
+            </span>
           </h1>
           <p className="mt-4 text-gray-700 text-xl text-justify">
             Vertigo is a feeling like you or the world around you is spinning or

@@ -9,7 +9,10 @@ const TypesVertigo = () => {
     >
       <div className="text-center p-6">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">
-          Types of <span className="text-[#005D9A]">Vertigo</span>
+          Types of{" "}
+          <span className="text-[#005D9A]">
+            Vertigo<sup>1-9</sup>
+          </span>
         </h1>
         <p className="mt-4 text-gray-700 text-xl w-[80%] mx-auto text-justify md:text-center">
           Vertigo, often not a condition by itself but a symptom, creates a
