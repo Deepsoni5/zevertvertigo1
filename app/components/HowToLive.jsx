@@ -166,7 +166,7 @@ const HowToLive = () => {
                 </button>
               </div>
               <p className="absolute bottom-2 left-2 right-2 text-white text-center text-lg font-semibold shadow-text">
-                {items[6].title}
+                {items[6].title} <sup>62-66</sup>
               </p>
             </div>
           </div>
