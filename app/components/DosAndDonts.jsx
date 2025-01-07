@@ -32,7 +32,7 @@ const DosAndDonts = () => {
         >
           Donts
         </button>
-        <sup className="font-bold text-lg">1-9,36-40</sup>
+        <sup className="font-bold text-lg hidden md:flex">1-9,36-40</sup>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         {activeTab === "dos" && (
