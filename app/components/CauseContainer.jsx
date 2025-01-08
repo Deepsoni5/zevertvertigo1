@@ -20,7 +20,7 @@ const CauseContainer = () => {
             What causes
             <span className="text-[#005D9A]">
               {" "}
-              vertigo?<sup>1-9</sup>
+              vertigo?<sup className="text-[19px]">1-9</sup>
             </span>
           </h1>
           <p className="mt-4 text-gray-700 text-xl text-justify">

@@ -21,7 +21,8 @@ const TwoGrid1 = ({ translations, language }) => {
     <div className="w-[80%] py-10 mx-auto">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
-          {translations[language].data[121].Name} <sup>28,31</sup>
+          {translations[language].data[121].Name}{" "}
+          <sup className="text-[17px]">28,31</sup>
         </h1>
         {selectedVideoId && isVideoVisible && (
           <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />

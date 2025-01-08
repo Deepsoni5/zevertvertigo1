@@ -58,7 +58,7 @@ const AnatomicalModel = () => {
             onClick={() => handleClick("1.jpeg")}
           />
           <p>
-            Full ear 3d<sup>18</sup>
+            Full ear 3d<sup className="text-[12px]">18</sup>
           </p>
         </div>
         <div className="text-center border-dotted border-2 border-gray-300 p-4">
@@ -69,7 +69,7 @@ const AnatomicalModel = () => {
             onClick={() => handleClick("2.png")}
           />
           <p>
-            Internal ear<sup>19,21-23</sup>
+            Internal ear<sup className="text-[12px]">19,21-23</sup>
           </p>
         </div>
         <div className="text-center border-dotted border-2 border-gray-300 p-4">
@@ -80,7 +80,7 @@ const AnatomicalModel = () => {
             onClick={() => handleClick("3.jpg")}
           />
           <p>
-            Semi-circular canals<sup>20-22</sup>
+            Semi-circular canals<sup className="text-[12px]">20-22</sup>
           </p>
         </div>
       </div>

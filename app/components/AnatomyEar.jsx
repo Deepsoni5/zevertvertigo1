@@ -11,7 +11,7 @@ const AnatomyEar = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Anatomy of the{" "}
           <span className="text-[#005D9A]">
-            inner ear<sup>18-23</sup>
+            inner ear<sup className="text-[19px]">18-23</sup>
           </span>
         </h1>
         <div className="lg:w-1/2 flex justify-center">

@@ -21,7 +21,7 @@ const ThreeGrid = ({ translations, language }) => {
     <div className="text-center py-10 w-[80%] mx-auto">
       <h1 className="text-4xl font-bold text-gray-800">
         {translations[language].data[39].Name}
-        <sup>24,26-29,31</sup>
+        <sup className="text-[17px]">24,26-29,31</sup>
       </h1>
       {selectedVideoId && isVideoVisible && (
         <VideoPlayer videoId={selectedVideoId} onClose={handleVideoClose} />

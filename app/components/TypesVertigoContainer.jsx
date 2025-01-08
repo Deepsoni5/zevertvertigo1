@@ -55,7 +55,7 @@ const TypesVertigoContainer = ({
             {headingText}{" "}
             <span className="text-[#005D9A]">
               {headingBlue}
-              <sup>{sup}</sup>
+              <sup className="text-[19px]">{sup}</sup>
             </span>
           </h1>
           <p className="text-gray-700 text-xl text-justify mt-6">{para}</p>

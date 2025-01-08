@@ -12,7 +12,8 @@ const Safety = () => {
       <div className="mt-28 flex items-center justify-center">
         <div className="text-center px-4">
           <h1 className="text-4xl font-bold text-indigo-900">
-            Safety Instructions for Vertigo Exercises <sup>1-9,33,34,40</sup>
+            Safety Instructions for Vertigo Exercises{" "}
+            <sup className="text-[19px]">1-9,33,34,40</sup>
           </h1>
           <p className="text-gray-600 mt-4 w-[100%] sm:w-[80%] mx-auto text-xl mb-10 text-justify md:text-center">
             Living with vertigo can be challenging, especially when it comes to
