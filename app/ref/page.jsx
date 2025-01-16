@@ -85,11 +85,12 @@ function Reference() {
             {links.map((link, index) => (
               <a
                 key={index}
-                className="block p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 transition duration-200"
+                className="flex  p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 transition duration-200"
               >
+                <span className="text-md font-medium mr-2">{index + 1})</span>
                 <span
                   className="text-md font-medium break-words"
-                  style={{ wordBreak: "break-word" }}
+                  style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}
                 >
                   {link}
                 </span>

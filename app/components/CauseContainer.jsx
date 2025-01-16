@@ -32,7 +32,7 @@ const CauseContainer = () => {
             spinning around you. Seeking guidance from a doctor can help you
             find the cause and best ways to manage vertigo.
           </p>
-          <WhatsappButtonVideo />
+          <WhatsappButtonVideo link="" />
         </div>
       </div>
     </div>

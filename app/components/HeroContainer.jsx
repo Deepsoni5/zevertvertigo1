@@ -34,7 +34,7 @@ const HeroContainer = () => {
             ear, head injuries, or other health issues, making you feel
             off-balance or unsteady.
           </p>
-          <WhatsappButtonVideo />
+          <WhatsappButtonVideo link="https://www.youtube.com/watch?v=5Lh1INdRHKg" />
         </div>
       </div>
     </div>
