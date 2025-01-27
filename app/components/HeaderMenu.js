@@ -61,16 +61,17 @@ const Headermenu = ({
               className="relative font-medium text-white  inline-block min-w-[124px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onWhatIsVertigo1Click}
             >{`What is Vertigo? `}</div>
+
+            <div
+              className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
+              onClick={onTypesOfVertigo2Click}
+            >{`Types of Vertigo `}</div>
             <div
               className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onAnatomical3dModel1Click}
             >
               Anatomical 3d models
             </div>
-            <div
-              className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
-              onClick={onTypesOfVertigo2Click}
-            >{`Types of Vertigo `}</div>
             <div
               className="relative text-white whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onAnatomyEar}
@@ -88,23 +89,24 @@ const Headermenu = ({
               Safety Tips
             </div>
             <div
-              className="relative text-white inline-block min-w-[94px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
-              onClick={onHowToLive2Click}
-            >
-              How to Live with Vertigo
-            </div>
-            <div
               className="relative text-white inline-block min-w-[121px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onDosAndDonts1Click}
             >
               Dos and Donts
             </div>
             <div
+              className="relative text-white inline-block min-w-[94px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
+              onClick={onHowToLive2Click}
+            >
+              How to Live with Vertigo
+            </div>
+
+            <div
               className="relative text-white inline-block min-w-[78px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onChatbotsText1Click}
             >
               {" "}
-              Chatbots
+              Chatbot
             </div>
             <Link href="/ref">
               <div className="relative text-white inline-block min-w-[81px] cursor-pointer  mq1600:text-3xl navbar-item">

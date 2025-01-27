@@ -88,22 +88,23 @@ const Footer = ({ setShowLanding }) => {
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"
-            onClick={() => navigateToHomeAndScroll("group")}
+            onClick={() => navigateToHomeAndScroll("tv")}
+          >
+            Types of Vertigo
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("ana")}
           >
             Anatomical 3D Model
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"
-            onClick={() => navigateToHomeAndScroll("howToLive")}
+            onClick={() => navigateToHomeAndScroll("group")}
           >
-            How to Live with Vertigo?
+            Anatomy of Ear
           </button>
-          <button
-            className="text-white hover:text-neutral-300 transition-all"
-            onClick={() => navigateToHomeAndScroll("tv")}
-          >
-            Types of Vertigo
-          </button>
+
           <Link href="/exercise">
             <button className="text-white hover:text-neutral-300 transition-all">
               Exercises
@@ -123,9 +124,15 @@ const Footer = ({ setShowLanding }) => {
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("howToLive")}
+          >
+            How to Live with Vertigo?
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
             onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
           >
-            Chatbots
+            Chatbot
           </button>
           <Link href="/ref">
             <button className="text-white hover:text-neutral-300 transition-all">
