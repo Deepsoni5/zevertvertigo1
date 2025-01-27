@@ -96,7 +96,7 @@ const Footer = ({ setShowLanding }) => {
             className="text-white hover:text-neutral-300 transition-all"
             onClick={() => navigateToHomeAndScroll("ana")}
           >
-            Anatomical 3D Model
+            Anatomical 3D Models
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"
