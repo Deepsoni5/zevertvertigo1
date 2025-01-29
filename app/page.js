@@ -15,6 +15,7 @@ import DosAndDonts from "./components/DosAndDonts";
 import HowToLive from "./components/HowToLive";
 import ChatBot from "./components/ChatBot";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [showLanding, setShowLanding] = useState(true);
@@ -81,51 +82,79 @@ export default function Home() {
           <HeroContainer />
           <CauseContainer />
           <TypesVertigo />
-          <TypesVertigoContainer
-            videoId="JGvVcyJigbg"
-            reverse="false"
-            imgSrc="/laby.png"
-            headingText="Labyrinthitis"
-            headingBlue=""
-            para="Labyrinthitis is an ear infection that causes swelling in the inner ear, disturbing both hearing and balance. It can affectanyone but is more seen in adults aged 30-60, particularly in individuals assigned female at birth. If not treated promptly, itcan lead to hearing difficulties, a higher chance of falling, and lasting harm to the inner ear. The symptoms includedizziness, nausea, hearing loss along with a feeling of movement even when you are still. It can disrupt daily activities."
-            sup="1-10"
-          />
-          <TypesVertigoContainer
-            videoId="IcLtdUrQkIg"
-            reverse="true"
-            imgSrc="/benign.png"
-            headingText="Benign paroxysmal positional"
-            headingBlue="vertigo (BPPV)"
-            para="Benign paroxysmal positional vertigo (BPPV) – is a common ear problem causing sudden spinning sensations with head movements like sitting up or tilting back. Although not typically serious, especially risky for those over 65, it might lead to falls. BPPV often resolves within days or weeks by itself. It occurs when tiny calcium
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <TypesVertigoContainer
+              videoId="JGvVcyJigbg"
+              reverse="false"
+              imgSrc="/laby.png"
+              headingText="Labyrinthitis"
+              headingBlue=""
+              para="Labyrinthitis is an ear infection that causes swelling in the inner ear, disturbing both hearing and balance. It can affectanyone but is more seen in adults aged 30-60, particularly in individuals assigned female at birth. If not treated promptly, itcan lead to hearing difficulties, a higher chance of falling, and lasting harm to the inner ear. The symptoms includedizziness, nausea, hearing loss along with a feeling of movement even when you are still. It can disrupt daily activities."
+              sup="1-10"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <TypesVertigoContainer
+              videoId="IcLtdUrQkIg"
+              reverse="true"
+              imgSrc="/benign.png"
+              headingText="Benign paroxysmal positional"
+              headingBlue="vertigo (BPPV)"
+              para="Benign paroxysmal positional vertigo (BPPV) – is a common ear problem causing sudden spinning sensations with head movements like sitting up or tilting back. Although not typically serious, especially risky for those over 65, it might lead to falls. BPPV often resolves within days or weeks by itself. It occurs when tiny calcium
 particles shift and become trapped in the balance-controlling ear canals, usually originating from a part called
 the utricle. As these loose particles interact with hair-like structures in the canals during head movement,
 they end misleading balance signals to the brain leading to vertigo"
-            sup="1-9,11"
-          />
-          <TypesVertigoContainer
-            reverse="false"
-            videoId="QJDS7SmfZh0"
-            imgSrc="menire.png"
-            headingText="Meniere’s"
-            headingBlue="disease"
-            para="Menieres disease is a rare inner ear disorder affecting balance and hearing. People with this condition often
+              sup="1-9,11"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <TypesVertigoContainer
+              reverse="false"
+              videoId="QJDS7SmfZh0"
+              imgSrc="menire.png"
+              headingText="Meniere’s"
+              headingBlue="disease"
+              para="Menieres disease is a rare inner ear disorder affecting balance and hearing. People with this condition often
 feel like they might need to sit down to avoid falling. It causes issues with hearing such as ringing in the ears (tinnitus) and temporary difficulty hearing, which might eventually lead to hearing loss. It usually happens to
 individuals between 40 and 60 years old. Some individuals might have family members with this same condition."
-            sup="1-9,12-14"
-          />
-          <TypesVertigoContainer
-            videoId="n-ROxSrEXrU"
-            reverse="true"
-            imgSrc="post.png"
-            headingText="Posttraumatic"
-            headingBlue="vertigo"
-            para="Posttraumatic vertigo - After accidents or injuries to the head, neck, or certain parts of the body, many
+              sup="1-9,12-14"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <TypesVertigoContainer
+              videoId="n-ROxSrEXrU"
+              reverse="true"
+              imgSrc="post.png"
+              headingText="Posttraumatic"
+              headingBlue="vertigo"
+              para="Posttraumatic vertigo - After accidents or injuries to the head, neck, or certain parts of the body, many
 people might feel vertigo, which makes them think the room is spinning. This often happens after a mild
 traumatic brain injury caused by falls, car accidents, or sports injuries. Almost half of people who get a
 concussion report feeling dizzy, lightheaded, or have problems with balance in the first days after injury.
 Although for most people these feelings go away in a few days or weeks, some might experience postconcussion vertigo for many years. "
-            sup="1-9,15-17"
-          />
+              sup="1-9,15-17"
+            />
+          </motion.div>
           <AnatomicalModel />
           <AnatomyEar />
           <Vestibular />
