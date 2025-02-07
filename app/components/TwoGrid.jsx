@@ -32,7 +32,7 @@ const TwoGrid = ({ translations, language }) => {
         </p>
         <div className="flex flex-col md:flex-row justify-center md:space-x-4">
           <div
-            className="md:w-1/3 cursor-pointer"
+            className="md:w-1/3 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleWatchMovie("IH3osa3A9bI")}
           >
             <div className="relative">
@@ -52,7 +52,7 @@ const TwoGrid = ({ translations, language }) => {
             </p>
           </div>
           <div
-            className="md:w-1/3 cursor-pointer"
+            className="md:w-1/3 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleWatchMovie("rhw6iaWz7Z8")}
           >
             <div className="relative">

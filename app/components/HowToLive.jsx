@@ -95,7 +95,7 @@ const HowToLive = () => {
             {items.slice(0, 6).map((item, index) => (
               <div
                 key={index}
-                className="relative group bg-gray-800 rounded-lg overflow-hidden"
+                className="relative group bg-gray-800 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
                 onClick={() => handleWatchMovie(item.link)}
               >
                 <img
@@ -135,7 +135,7 @@ const HowToLive = () => {
             ))}
 
             {/* Render the last item as a full-width row */}
-            <div className="col-span-1 sm:col-span-3">
+            <div className="col-span-1 sm:col-span-3 transform transition-transform duration-300 hover:scale-105">
               <div
                 className="relative group bg-gray-800 rounded-lg overflow-hidden"
                 onClick={() => handleWatchMovie("98k7KHF2UMY")}

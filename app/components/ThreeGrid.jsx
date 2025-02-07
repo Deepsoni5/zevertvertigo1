@@ -31,7 +31,7 @@ const ThreeGrid = ({ translations, language }) => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
-          className="text-center cursor-pointer flex flex-col items-center"
+          className="text-center cursor-pointer flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("r1XrvfCvz4s")}
         >
           <div className="relative w-full">
@@ -49,7 +49,7 @@ const ThreeGrid = ({ translations, language }) => {
           </p>
         </div>
         <div
-          className="text-center cursor-pointer flex flex-col items-center"
+          className="text-center cursor-pointer flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("VhJyOO848OE")}
         >
           <div className="relative w-full">
@@ -67,7 +67,7 @@ const ThreeGrid = ({ translations, language }) => {
           </p>
         </div>
         <div
-          className="text-center cursor-pointer flex flex-col items-center"
+          className="text-center cursor-pointer flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("CBZ89zu9pgI")}
         >
           <div className="relative w-full">

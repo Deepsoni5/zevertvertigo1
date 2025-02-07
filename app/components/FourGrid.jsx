@@ -31,7 +31,7 @@ const FourGrid = ({ translations, language }) => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div
-          className="relative cursor-pointer"
+          className="relative cursor-pointer transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("PhMyGxvfHFI")}
         >
           <img
@@ -47,7 +47,7 @@ const FourGrid = ({ translations, language }) => {
           </p>
         </div>
         <div
-          className="relative cursor-pointer"
+          className="relative cursor-pointer transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("TN2E9OtoVRE")}
         >
           <img
@@ -63,7 +63,7 @@ const FourGrid = ({ translations, language }) => {
           </p>
         </div>
         <div
-          className="relative cursor-pointer"
+          className="relative cursor-pointer transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("UbhguHUni_0")}
         >
           <img
@@ -79,7 +79,7 @@ const FourGrid = ({ translations, language }) => {
           </p>
         </div>
         <div
-          className="relative cursor-pointer"
+          className="relative cursor-pointer transform transition-transform duration-300 hover:scale-105"
           onClick={() => handleWatchMovie("kccwKZ3ytQQ")}
         >
           <img
