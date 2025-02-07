@@ -212,7 +212,7 @@ const Footer = ({ setShowLanding }) => {
 
           {/* Footer Text */}
           <div className="text-center text-sm text-neutral-300">
-            Copyright © 2024 Medhavee Creatives
+            Copyright © 2025 Medhavee Creatives
           </div>
         </div>
       </footer>
