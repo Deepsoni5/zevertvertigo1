@@ -19,7 +19,7 @@ const GridItem = ({ imgSrc, altText, text, onClick, isNinth }) => (
   <div
     className={` ${
       isNinth == "true" && "col-span-2 lg:col-span-1"
-    } flex flex-col items-center cursor-pointer`}
+    } flex flex-col items-center cursor-pointer transform transition-transform duration-300 hover:scale-105`}
     onClick={onClick}
   >
     <div className="relative">

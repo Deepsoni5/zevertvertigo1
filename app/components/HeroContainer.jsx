@@ -22,7 +22,7 @@ const HeroContainer = () => {
               <img
                 src="/girl.png"
                 alt="A woman holding her head, looking dizzy or unsteady"
-                className="rounded-lg md:ml-5"
+                className="rounded-lg md:ml-5 cursor-pointer transform transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>

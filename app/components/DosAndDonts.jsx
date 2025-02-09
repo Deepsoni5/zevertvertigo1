@@ -45,7 +45,7 @@ const DosAndDonts = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {activeTab === "dos" && (
             <>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/d1.png"
                   alt="Prescription and pills"
@@ -55,7 +55,7 @@ const DosAndDonts = () => {
                   Medicines to be taken properly as per prescription.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/d2.png"
                   alt="Person meditating"
@@ -67,7 +67,7 @@ const DosAndDonts = () => {
                   drugs.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/d3.png"
                   alt="Person meditating"
@@ -77,7 +77,7 @@ const DosAndDonts = () => {
                   Perform yoga and meditation to reduce stress.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/d4.png"
                   alt="Person meditating"
@@ -95,7 +95,7 @@ const DosAndDonts = () => {
           )}
           {activeTab === "donts" && (
             <>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/dn1.png"
                   alt="Glass of water and pills"
@@ -105,7 +105,7 @@ const DosAndDonts = () => {
                   Dont ignore the symtomps.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/dn2.png"
                   alt="Doctor and phone"
@@ -115,7 +115,7 @@ const DosAndDonts = () => {
                   Smoking and alcohol should be restricted.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/dn3.png"
                   alt="Doctor and phone"
@@ -127,7 +127,7 @@ const DosAndDonts = () => {
                   intervals.
                 </p>
               </div>
-              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full">
+              <div className="bg-white shadow-md rounded-lg p-4 flex items-center space-x-4 w-full hover:bg-gray-200">
                 <img
                   src="/dn4.png"
                   alt="Doctor and phone"

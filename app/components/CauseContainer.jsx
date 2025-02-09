@@ -17,7 +17,7 @@ const CauseContainer = () => {
               <img
                 src="/cause.png"
                 alt="A woman holding her head, looking dizzy or unsteady"
-                className="rounded-lg mt-10 md:mt-0"
+                className="rounded-lg mt-10 md:mt-0 cursor-pointer transform transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
