@@ -27,7 +27,7 @@ const ChatBot = () => {
               width="400"
             />
           </div>
-          <button className="bg-green-500 text-white font-bold py-5 px-5 rounded-full flex items-center justify-center mx-auto">
+          <button className="bg-green-500 text-white font-bold py-5 px-5 rounded-full flex items-center justify-center mx-auto transition-transform duration-300 hover:bg-green-600 hover:scale-105">
             <i className="fab fa-whatsapp mr-2"></i>
             Whatsapp chatbot
           </button>
