@@ -13,12 +13,14 @@ const Headermenu2 = ({ setShowLanding }) => {
   return (
     <header className="mq1050: {' padding-left':'0px' } self-stretch h-[110px] bg-darkslategray flex-col items-center justify-center py-[25px] px-5 sm:px-20 box-border max-w-full z-[2] text-left text-lg text-neutral-400 font-roboto">
       <div className="hidden md:flex w-full flex-1 flex-row items-center justify-between gap-[20px] max-w-full">
-        <img
-          className="h-[55px] w-[220.8px] relative object-contain cursor-pointer"
-          alt=""
-          src="/logo.png"
-          onClick={() => setShowLanding(true)}
-        />
+        <div className="inline-block p-2 bg-white/70 backdrop-blur-lg rounded-md shadow-lg">
+          <img
+            className="h-[55px] w-[220.8px] relative object-contain cursor-pointer"
+            alt=""
+            src="/logo.png"
+            onClick={() => setShowLanding(true)}
+          />
+        </div>
 
         <div>
           <SignedOut>

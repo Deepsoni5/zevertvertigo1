@@ -145,9 +145,9 @@ individuals between 40 and 60 years old. Some individuals might have family memb
               videoId="n-ROxSrEXrU"
               reverse="true"
               imgSrc="post.png"
-              headingText="Posttraumatic"
+              headingText="Post traumatic"
               headingBlue="vertigo"
-              para="Posttraumatic vertigo - After accidents or injuries to the head, neck, or certain parts of the body, many
+              para="Post traumatic vertigo - After accidents or injuries to the head, neck, or certain parts of the body, many
 people might feel vertigo, which makes them think the room is spinning. This often happens after a mild
 traumatic brain injury caused by falls, car accidents, or sports injuries. Almost half of people who get a
 concussion report feeling dizzy, lightheaded, or have problems with balance in the first days after injury.

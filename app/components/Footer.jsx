@@ -65,136 +65,88 @@ const Footer = ({ setShowLanding }) => {
   );
 
   return (
-    <motion.footer
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: true }}
-    >
-      <footer className="mt-10 bg-gradient-to-br from-[#003557] via-[#00243c] to-[#003557] text-white py-10">
-        <div className="max-w-7xl mx-auto px-5">
-          {/* Logo Section */}
-          <div className="mb-6 text-center">
-            <Link href="/">
-              <img
-                className="h-10 mx-auto object-contain"
-                alt="Logo"
-                src="/logo.png"
-              />
-            </Link>
-          </div>
+    <footer className="mt-10 bg-gradient-to-br from-[#003557] via-[#00243c] to-[#003557] text-white py-10">
+      <div className="max-w-7xl mx-auto px-5">
+        {/* Logo Section */}
+        <div className="mb-6 text-center">
+          <Link href="/">
+            <img
+              className="h-10 mx-auto object-contain"
+              alt="Logo"
+              src="/logo.png"
+            />
+          </Link>
+        </div>
 
-          {/* Buttons / Links Section */}
-          <div className="flex flex-wrap items-center justify-center gap-4  md:gap-8">
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("vertigoIsA")}
-            >
-              What is Vertigo
-            </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("tv")}
-            >
-              Types of Vertigo
-            </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("ana")}
-            >
-              Anatomical 3D Model
-            </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("group")}
-            >
-              Anatomy of Ear
-            </button>
+        {/* Buttons / Links Section */}
+        <div className="flex flex-wrap items-center justify-center gap-4  md:gap-8">
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("vertigoIsA")}
+          >
+            What is Vertigo
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("tv")}
+          >
+            Types of Vertigo
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("ana")}
+          >
+            Anatomical 3D Model
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("group")}
+          >
+            Anatomy of Ear
+          </button>
 
-            <Link href="/exercise">
-              <button className="text-white hover:text-neutral-300 transition-all">
-                Exercises
-              </button>
-            </Link>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("safetyInstructionsFor")}
-            >
-              Safety Tips
+          <Link href="/exercise">
+            <button className="text-white hover:text-neutral-300 transition-all">
+              Exercises
             </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("dosDontsContent")}
-            >
-              Dos and Donts
+          </Link>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("safetyInstructionsFor")}
+          >
+            Safety Tips
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("dosDontsContent")}
+          >
+            Dos and Donts
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("howToLive")}
+          >
+            How to Live with Vertigo?
+          </button>
+          <button
+            className="text-white hover:text-neutral-300 transition-all"
+            onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
+          >
+            Chatbot
+          </button>
+          <Link href="/ref">
+            <button className="text-white hover:text-neutral-300 transition-all">
+              References
             </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("howToLive")}
-            >
-              How to Live with Vertigo?
-            </button>
-            <button
-              className="text-white hover:text-neutral-300 transition-all"
-              onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
-            >
-              Chatbot
-            </button>
-            <Link href="/ref">
-              <button className="text-white hover:text-neutral-300 transition-all">
-                References
-              </button>
-            </Link>
+          </Link>
 
-            {/* Additional Buttons */}
-            {isDataHubPage && (
-              <Link href="/" className={`${styles.scrollToTop1}`}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-              </Link>
-            )}
-            {isHomePage && (
-              <button
-                onClick={() => setShowLanding(true)}
-                className={`${styles.scrollToTop1}`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-              </button>
-            )}
-            <button
-              onClick={() => window.topFunction()}
-              id="topBtn"
-              title="Go to top"
-              className={`${styles.scrollToTop}`}
-            >
+          {/* Additional Buttons */}
+          {isDataHubPage && (
+            <Link href="/" className={`${styles.scrollToTop1}`}>
               <svg
-                className={styles.arrowIcon}
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -202,21 +154,62 @@ const Footer = ({ setShowLanding }) => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M12 19V5M5 12l7-7 7 7" />
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </Link>
+          )}
+          {isHomePage && (
+            <button
+              onClick={() => setShowLanding(true)}
+              className={`${styles.scrollToTop1}`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
             </button>
-          </div>
-
-          {/* Divider */}
-          <div className="border-t border-neutral-400 mt-8 mb-6 mx-auto w-2/3"></div>
-
-          {/* Footer Text */}
-          <div className="text-center text-sm text-neutral-300">
-            Copyright © 2025 Medhavee Creatives
-          </div>
+          )}
+          <button
+            onClick={() => window.topFunction()}
+            id="topBtn"
+            title="Go to top"
+            className={`${styles.scrollToTop}`}
+          >
+            <svg
+              className={styles.arrowIcon}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </button>
         </div>
-      </footer>
-    </motion.footer>
+
+        {/* Divider */}
+        <div className="border-t border-neutral-400 mt-8 mb-6 mx-auto w-2/3"></div>
+
+        {/* Footer Text */}
+        <div className="text-center text-sm text-neutral-300">
+          Copyright © 2025 Medhavee Creatives
+        </div>
+      </div>
+    </footer>
   );
 };
 

@@ -89,6 +89,15 @@ const MobileMenu = () => {
 
         <ul className="mt-16">
           <li>
+            <Link
+              href="/"
+              onClick={toggleNavbar}
+              className="text-white no-underline  cursor-pointer block py-2 px-4"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
             <button
               onClick={() => navigateToHomeAndScroll("vertigoIsA")}
               className="text-white bg-transparent text-lg cursor-pointer block py-2 px-4"

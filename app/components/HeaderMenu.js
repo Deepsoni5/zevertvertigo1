@@ -48,13 +48,17 @@ const Headermenu = ({
       style={headermenuStyle}
     >
       <div className="hidden xl:flex w-full flex-1 flex-row items-center justify-between gap-[20px] max-w-full">
-        <a href="/">
+        <a
+          href="/"
+          className="inline-block p-2 bg-white/70 backdrop-blur-lg rounded-md shadow-lg"
+        >
           <img
-            className="h-[55px] mt-1 w-[240.8px] relative object-contain cursor-pointer"
-            alt=""
+            className="h-[55px] w-[240.8px] object-contain cursor-pointer"
+            alt="Logo"
             src="/logo.png"
           />
         </a>
+
         <div className="self-stretch w-full flex flex-row flex-wrap items-center justify-start max-w-full mq1050:gap-[17px]">
           <div className="self-stretch flex-1 flex flex-row flex-wrap items-center justify-center py-0 px-9 box-border gap-[14px_20px] max-w-full">
             <div

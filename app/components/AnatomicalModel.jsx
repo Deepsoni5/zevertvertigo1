@@ -59,7 +59,7 @@ const AnatomicalModel = () => {
           <img
             src="/1.jpeg"
             alt="3D model of a full ear"
-            className="mx-auto mb-2 w-68 h-60 cursor-pointer"
+            className="mx-auto mb-2 w-68 h-60 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleClick("1.jpeg")}
           />
           <p>
@@ -70,7 +70,7 @@ const AnatomicalModel = () => {
           <img
             src="/2.png"
             alt="3D model of an internal ear"
-            className="mx-auto mb-2 w-68 h-60 cursor-pointer"
+            className="mx-auto mb-2 w-68 h-60 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleClick("2.png")}
           />
           <p>
@@ -81,7 +81,7 @@ const AnatomicalModel = () => {
           <img
             src="/3.jpg"
             alt="3D model of semi-circular canals"
-            className="mx-auto mb-2 w-[300px] h-60 cursor-pointer"
+            className="mx-auto mb-2 w-[300px] h-60 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleClick("3.jpg")}
           />
           <p>
