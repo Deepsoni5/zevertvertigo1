@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const AnatomyEar = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.7 }}
+      initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
       <div

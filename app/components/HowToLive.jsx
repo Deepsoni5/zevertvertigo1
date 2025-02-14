@@ -65,9 +65,9 @@ const HowToLive = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: -40, scale: 0.8 }}
-      whileInView={{ opacity: 1, x: 0, scale: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
       <div

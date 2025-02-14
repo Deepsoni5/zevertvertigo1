@@ -37,13 +37,15 @@ const MobileMenu = () => {
 
   return (
     <div className="h-full w-full   flex justify-between items-center px-4 py-2 ">
-      <Link href="/">
-        <img
-          className={`h-[39.6px] w-[173.8px] relative object-contain`}
-          alt=""
-          src="/logo.png"
-        />
-      </Link>
+      <div className="inline-block p-2 bg-white/70 backdrop-blur-lg rounded-md shadow-lg">
+        <Link href="/">
+          <img
+            className={`h-[39.6px] w-[173.8px] relative object-contain`}
+            alt=""
+            src="/logo.png"
+          />
+        </Link>
+      </div>
 
       <div className="flex gap-6 items-center">
         <div>

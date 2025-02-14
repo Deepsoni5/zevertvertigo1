@@ -52,7 +52,7 @@ export default function Home() {
       // Wait for the DOM to render
       const timer = setTimeout(() => {
         const anchor = document.querySelector(`[data-scroll-to='${scrollTo}']`);
-        console.log("Target element:", anchor); // Debug: Ensure the element is found
+        // Debug: Ensure the element is found
 
         if (anchor) {
           // Smoothly scroll to the element
@@ -83,10 +83,10 @@ export default function Home() {
           <CauseContainer />
           <TypesVertigo />
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
-            viewport={{ once: true, amount: 0.3 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <TypesVertigoContainer
               videoId="JGvVcyJigbg"
@@ -99,9 +99,9 @@ export default function Home() {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
             <TypesVertigoContainer
@@ -118,9 +118,9 @@ they end misleading balance signals to the brain leading to vertigo"
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
             <TypesVertigoContainer
@@ -136,9 +136,9 @@ individuals between 40 and 60 years old. Some individuals might have family memb
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 80, duration: 1.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
             <TypesVertigoContainer
