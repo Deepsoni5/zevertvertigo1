@@ -59,7 +59,9 @@ const TypesVertigoContainer = ({
             </span>
           </h1>
           <p className="text-gray-700 text-xl text-justify mt-6">{para}</p>
-          <WhatsappButtonVideo />
+          <WhatsappButtonVideo
+            link={`https://www.youtube.com/watch?v=${videoId}`}
+          />
         </div>
       </div>
     </div>

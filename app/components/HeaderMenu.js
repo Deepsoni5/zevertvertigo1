@@ -137,7 +137,7 @@ const Headermenu = ({
         </div>
       </div>
       <div className="flex w-full xl:hidden z-50">
-        <MobileMenu />
+        <MobileMenu setShowLanding={setShowLanding} />
       </div>
     </header>
   );

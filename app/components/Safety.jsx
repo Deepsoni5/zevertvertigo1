@@ -55,7 +55,7 @@ const Safety = () => {
           text="Exercising regularly will enhance your chances of relieving vertigo symptoms without risking any injury."
         />
 
-        <ShareButtons />
+        <ShareButtons type="safety" videoId="lM0PC3CWpBc" />
       </div>
     </motion.div>
   );

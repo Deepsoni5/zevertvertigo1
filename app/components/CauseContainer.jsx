@@ -39,7 +39,6 @@ const CauseContainer = () => {
               doctor can help you find the cause and best ways to manage
               vertigo.
             </p>
-            <WhatsappButtonVideo link="" />
           </div>
         </div>
       </div>

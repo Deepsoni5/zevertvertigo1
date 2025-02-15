@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Vestibular = () => {
   return (
     <motion.div
@@ -28,12 +29,11 @@ const Vestibular = () => {
             this journey towards relief.
           </p>
           <div className="flex justify-center gap-5 flex-col sm:flex-row">
-            <button className="bg-red-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 hover:bg-red-700 hover:scale-105">
-              Exercises
-            </button>
-            <button className="bg-green-500 text-white font-bold py-2 px-4 text-center rounded flex items-center justify-center gap-2 transition-transform duration-300 hover:bg-green-600 hover:scale-105">
-              <i className="fab fa-whatsapp"></i> Share PDF
-            </button>
+            <Link href="/exercise">
+              <button className="bg-red-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 hover:bg-red-700 hover:scale-105">
+                Exercises
+              </button>
+            </Link>
           </div>
         </div>
       </div>

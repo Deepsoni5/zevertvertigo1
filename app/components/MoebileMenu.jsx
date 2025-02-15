@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-const MobileMenu = () => {
+const MobileMenu = ({ setShowLanding }) => {
   const [isExerciseRoute, setIsExerciseRoute] = useState(false);
 
   const handleButtonClick = (scrollToId) => {
@@ -90,14 +90,11 @@ const MobileMenu = () => {
         </span>
 
         <ul className="mt-16">
-          <li>
-            <Link
-              href="/"
-              onClick={toggleNavbar}
-              className="text-white no-underline  cursor-pointer block py-2 px-4"
-            >
-              Home
-            </Link>
+          <li
+            className="text-white no-underline  cursor-pointer block py-2 px-4"
+            onClick={() => setShowLanding(true)}
+          >
+            Home
           </li>
           <li>
             <button

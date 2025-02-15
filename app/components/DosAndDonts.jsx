@@ -89,7 +89,7 @@ const DosAndDonts = () => {
                 </p>
               </div>
               <div className="flex justify-center pt-4 md:col-span-2">
-                <ShareButtons />
+                <ShareButtons type="dos" videoId="Hi_QSD-6_GY" />
               </div>
             </>
           )}
@@ -138,7 +138,7 @@ const DosAndDonts = () => {
                 </p>
               </div>
               <div className="flex justify-center pt-4 md:col-span-2">
-                <ShareButtons />
+                <ShareButtons type="donts" videoId="Hi_QSD-6_GY" />
               </div>
             </>
           )}

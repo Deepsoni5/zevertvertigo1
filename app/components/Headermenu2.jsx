@@ -40,7 +40,7 @@ const Headermenu2 = ({ setShowLanding }) => {
         </div>
       </div>
       <div className="block md:hidden z-50">
-        <MobileMenu />
+        <MobileMenu setShowLanding={setShowLanding} />
       </div>
     </header>
   );
