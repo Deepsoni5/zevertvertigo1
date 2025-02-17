@@ -96,7 +96,7 @@ const Headermenu = ({
               className="relative text-white inline-block min-w-[121px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onDosAndDonts1Click}
             >
-              Do's and Don'ts
+              {"Do's and Don'ts"}
             </div>
             <div
               className="relative text-white inline-block min-w-[94px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"

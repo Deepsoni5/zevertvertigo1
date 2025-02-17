@@ -123,7 +123,7 @@ const Footer = ({ setShowLanding }) => {
             className="text-white hover:text-neutral-300 transition-all"
             onClick={() => navigateToHomeAndScroll("dosDontsContent")}
           >
-            Do's and Don'ts
+            {"Do's and Don'ts"}
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"

@@ -169,7 +169,7 @@ const MobileMenu = ({ setShowLanding }) => {
               onClick={() => navigateToHomeAndScroll("dosDontsContent")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
-              Do's and Don'ts
+              {"Do's and Don'ts"}
             </button>
           </li>
           <li>
