@@ -63,7 +63,7 @@ const ThreeGrid1 = ({ translations, language }) => {
             </div>
           </div>
           <p className="mt-4 text-gray-800 text-xl font-bold">
-            {translations[language].data[82].Name.split(".")[3].slice(0)}
+            {translations[language].data[82].Name.split(".")[2].slice(0, -1)}
           </p>
         </div>
         <div
@@ -81,7 +81,7 @@ const ThreeGrid1 = ({ translations, language }) => {
             </div>
           </div>
           <p className="mt-4 text-gray-800 text-xl font-bold">
-            {translations[language].data[82].Name.split(".")[2].slice(0, -1)}
+            {translations[language].data[82].Name.split(".")[3].slice(0, -1)}
           </p>
         </div>
       </div>

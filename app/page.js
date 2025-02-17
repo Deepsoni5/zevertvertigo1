@@ -27,15 +27,13 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Scroll to the target section when showLanding changes to false
     if (!showLanding && targetSection) {
       const element = document.getElementById(targetSection);
       if (element) {
-        const yOffset = -100; // Adjust this value as needed
         setTimeout(() => {
           const yPosition =
-            element.getBoundingClientRect().top + window.scrollY + yOffset;
-          window.scrollTo({ top: yPosition, behavior: "smooth" });
+            element.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({ top: yPosition - 130, behavior: "smooth" });
         }, 100); // Adjust delay if needed
       }
     }
@@ -56,7 +54,11 @@ export default function Home() {
 
         if (anchor) {
           // Smoothly scroll to the element
-          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          const yPosition =
+            anchor.getBoundingClientRect().top + window.pageYOffset;
+
+          // Smoothly scroll to the position minus 120
+          window.scrollTo({ top: yPosition - 160, behavior: "smooth" });
 
           // Clean up the URL
           const newUrl = window.location.pathname;

@@ -15,6 +15,8 @@ const ThreeGrid2 = ({ translations, language }) => {
     setSelectedVideoId(videoId);
   };
 
+  console.log(translations[language].data[86].Name.split("."));
+
   const imageUrlStand =
     "https://www.youtube.com/playlist?list=PL76dONsDiTy6xaDs9m91xgNnfanN1_l49";
   return (
@@ -45,7 +47,7 @@ const ThreeGrid2 = ({ translations, language }) => {
             </div>
           </div>
           <p className="mt-4 text-gray-800 text-xl font-bold">
-            {translations[language].data[86].Name.split(".")[1].slice(0, -1)}
+            {translations[language].data[86].Name.split(".")[1].slice(0)}
           </p>
         </div>
         <div
@@ -63,7 +65,7 @@ const ThreeGrid2 = ({ translations, language }) => {
             </div>
           </div>
           <p className="mt-4 text-gray-800 text-xl font-bold">
-            {translations[language].data[86].Name.split(".")[2].slice(0, -1)}
+            {translations[language].data[86].Name.split(".")[3].slice(0)}
           </p>
         </div>
         <div
@@ -81,7 +83,7 @@ const ThreeGrid2 = ({ translations, language }) => {
             </div>
           </div>
           <p className="mt-4 text-gray-800 text-xl font-bold">
-            {translations[language].data[86].Name.split(".")[3].slice(0)}
+            {translations[language].data[86].Name.split(".")[5].slice(0)}
           </p>
         </div>
       </div>

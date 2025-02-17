@@ -169,7 +169,7 @@ const MobileMenu = ({ setShowLanding }) => {
               onClick={() => navigateToHomeAndScroll("dosDontsContent")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
-              Dos and Donts
+              Do's and Don'ts
             </button>
           </li>
           <li>
@@ -177,7 +177,7 @@ const MobileMenu = ({ setShowLanding }) => {
               onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
               className=" text-white bg-transparent text-lg cursor-pointer block py-2 px-4"
             >
-              ChatBots
+              Whatsapp ChatBot
             </button>
           </li>
           <li>

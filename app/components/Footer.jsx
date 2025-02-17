@@ -69,7 +69,10 @@ const Footer = ({ setShowLanding }) => {
       <div className="max-w-7xl mx-auto px-5">
         {/* Logo Section */}
         <div className="mb-6 text-center">
-          <Link href="/">
+          <Link
+            href="/"
+            className="inline-block p-2 bg-white/70 backdrop-blur-lg rounded-md shadow-lg"
+          >
             <img
               className="h-10 mx-auto object-contain"
               alt="Logo"
@@ -120,7 +123,7 @@ const Footer = ({ setShowLanding }) => {
             className="text-white hover:text-neutral-300 transition-all"
             onClick={() => navigateToHomeAndScroll("dosDontsContent")}
           >
-            Dos and Donts
+            Do's and Don'ts
           </button>
           <button
             className="text-white hover:text-neutral-300 transition-all"
@@ -132,7 +135,7 @@ const Footer = ({ setShowLanding }) => {
             className="text-white hover:text-neutral-300 transition-all"
             onClick={() => navigateToHomeAndScroll("accessQuickInformation")}
           >
-            Chatbot
+            Whatsapp Chatbot
           </button>
           <Link href="/ref">
             <button className="text-white hover:text-neutral-300 transition-all">

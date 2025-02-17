@@ -69,7 +69,7 @@ const Header = ({ setShowLanding }) => {
     <section className="self-stretch   overflow-hidden  flex flex-col items-start justify-start pt-0 px-0 pb-48 box-border relative max-w-full z-[3] text-left text-27xl text-neutral-800 font-montserrat">
       <Headermenu
         onWhatIsVertigo1Click={() => navigateToHomeAndScroll("vertigoIsA")}
-        onAnatomical3dModel1Click={() => navigateToHomeAndScroll("group")}
+        onAnatomical3dModel1Click={() => navigateToHomeAndScroll("ana")}
         onHowToLive2Click={() => navigateToHomeAndScroll("howToLive")}
         onTypesOfVertigo2Click={() => navigateToHomeAndScroll("tv")}
         onExercisesText1Click={() => navigateToHomeAndScroll("data-hub")}

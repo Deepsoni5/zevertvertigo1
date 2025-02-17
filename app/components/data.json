@@ -455,7 +455,7 @@
       },
       {
         "Id": "63",
-        "Name": "a. Look up and look down \nb. Look left and look right \nc. Convergence exercise: Look at a near object such that the 2 eyeballs move towards each other (the object should appear single).",
+        "Name": "a. Look up and look down \nb. Look left and look right \nc. Convergence exercise",
         "Type": "Text",
         "Parent": "27"
       },
@@ -522,7 +522,7 @@
       },
       {
         "Id": "66",
-        "Name": "a. Stand up from a chair with eyes open for 15 timess. Repeat with eyes shut \nb. Throw a small ball in an arc from one hand to another and follow its movement with your eyes. \nc. Throw a small ball from one hand to another under the knee",
+        "Name": "a. Stand up from a chair with eyes open for 15 times Repeat with eyes shut. \nb. Throw a small ball in an arc from one hand to another and follow its movement with your eyes. \nc. Throw a small ball from one hand to another under the knee.",
         "Type": "Text",
         "Parent": "30"
       },

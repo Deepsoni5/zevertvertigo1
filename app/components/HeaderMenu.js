@@ -96,7 +96,7 @@ const Headermenu = ({
               className="relative text-white inline-block min-w-[121px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
               onClick={onDosAndDonts1Click}
             >
-              Dos and Donts
+              Do's and Don'ts
             </div>
             <div
               className="relative text-white inline-block min-w-[94px] whitespace-nowrap cursor-pointer mq1600:text-3xl navbar-item"
@@ -110,7 +110,7 @@ const Headermenu = ({
               onClick={onChatbotsText1Click}
             >
               {" "}
-              Chatbot
+              Whatsapp Chatbot
             </div>
             <Link href="/ref">
               <div className="relative text-white inline-block min-w-[81px] cursor-pointer  mq1600:text-3xl navbar-item">

@@ -5,8 +5,12 @@ import VideoPlayer from "./VideoPlayer";
 const ShareButtons = ({ type, videoId }) => {
   const link =
     type === "safety"
-      ? "https://drive.google.com/file/d/1mvotEQ4ZBAYsNNP9YzFMEJUcJPV3XDiQ/view"
-      : "https://drive.google.com/file/d/1bibUHMEuKLbMRWxRpChYWOctxOUtlcvq/view";
+      ? "https://drive.google.com/file/d/1024LSL1tM7-lir8muhzaKEitj6e2GEn7/view"
+      : "https://drive.google.com/file/d/1HBILD19I91tZwHduJy5yMVv5NCJi2qWw/view";
+  const videoLink =
+    type === "safety"
+      ? "https://www.youtube.com/watch?v=lM0PC3CWpBc&t=3s"
+      : "https://www.youtube.com/watch?v=Hi_QSD-6_GY";
 
   const [selectedVideoId, setSelectedVideoId] = useState(null);
   const [isVideoVisible, setIsVideoVisible] = useState(true);
@@ -37,7 +41,7 @@ const ShareButtons = ({ type, videoId }) => {
         </button>
       </a>
       <button
-        onClick={() => wpshare(link)}
+        onClick={() => wpshare(videoLink)}
         className="flex items-center bg-green-500 text-white font-semibold py-2 px-5 rounded-full transition-transform duration-300 hover:bg-green-600 hover:scale-105"
       >
         <i className="fab fa-whatsapp mr-2"></i>
