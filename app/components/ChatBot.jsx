@@ -28,7 +28,13 @@ const ChatBot = () => {
             />
           </div>
           <button
-            onClick={() => window.open("https://wa.me/916355203983", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://wa.me/916355203983?text=" +
+                  encodeURIComponent("Hey, I need help with Vertigo"),
+                "_blank"
+              )
+            }
             className="bg-green-500 text-white font-bold py-5 px-5 rounded-full flex items-center justify-center mx-auto transition-transform duration-300 hover:bg-green-600 hover:scale-105"
           >
             <i className="fab fa-whatsapp mr-2"></i>
